@@ -1,39 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
-
-    <!-- js -->
-    <script type="module" src="app.js"></script>
-
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
-
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game by Aaron</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
+    <div class="game">
+        <div class="controls">
+            <button>Start</button>
+            <div class="stats">
+                <div class="moves">0 moves</div>
+                <div class="timer">Time: 0 sec</div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board" data-dimension="4"></div>
+            <div class="win">You won!</div>
+        </div>
+    </div>
 </body>
-
 </html>
